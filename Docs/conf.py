@@ -2,9 +2,9 @@ import git
 
 # Project Information
 
-project = "Unnamed BattleBot"
+project = "APRN-Pi"
 copyright = "2021-2022, To Be Announced"
-author = "Orbital Precession, Concord Robotics"
+author = "Kitsune Scientific"
 
 
 # The full version, including alpha/beta/rc tags
