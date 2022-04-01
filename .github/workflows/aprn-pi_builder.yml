@@ -105,5 +105,5 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           prerelease: true
-          body: "Concord Robotics, Automated with github ci/cd."
+          body: "Kitsune Scientific, Automated with github ci/cd."
           file_glob: true
