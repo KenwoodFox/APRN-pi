@@ -1,0 +1,3 @@
+[submodule "Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries
+	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries

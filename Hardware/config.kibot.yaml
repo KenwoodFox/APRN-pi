@@ -1,0 +1,31 @@
+kibot:
+  version: 1
+# Look into pcb_replace, looks sick! Also sch_replace
+
+preflight:
+  # Warn us about unconnected
+  ignore_unconnected: true # (Skip for now)
+
+  # Do a DRC check
+  run_drc: false # (Skip for now)
+
+  # Replace variables
+  set_text_variables:
+    - name: "revision"
+      command: "git rev-parse --short HEAD"
+    - name: "full_revision"
+      command: "git describe --always --tags"
+      before: "Release: "
+    - name: "issue"
+      command: "date '+%Y-%m-%d'"
+    - name: "KENWOODFOX_3DMODELS" # My custom libs!
+      command: "echo 'Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries/3d'"
+
+outputs:
+  - name: "Images"
+    comment: "Schematics and media for use in docs"
+    type: svg_sch_print
+
+  - name: "3D Models"
+    comment: "3D Models for use by the CAD team"
+    type: step
