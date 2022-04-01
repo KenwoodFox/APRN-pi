@@ -100,6 +100,8 @@ jobs:
 
       - run: cp *.step _staging/
 
+      - run: cp PCBWay/*.zip _staging/APRN-pi-$(git rev-parse --short HEAD)-PCBWay.zip
+
       - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
         with:
