@@ -30,6 +30,9 @@ jobs:
           schema: "Hardware/APRN-pi_board/APRN-pi.kicad_sch"
           board: "Hardware/APRN-pi_board/APRN-pi.kicad_pcb"
 
+          # Debug
+          verbose: 1
+
       - name: upload results
         uses: actions/upload-artifact@v2
         with:
