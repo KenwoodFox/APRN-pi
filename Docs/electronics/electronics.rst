@@ -4,5 +4,5 @@ Electronics
 Schematics
 ==========
 
-.. image:: ../../_hardwareOutput/APRN-Pi-schematic.svg
+.. image:: ../../_hardwareOutput/APRN-pi-schematic.svg
     :scale: 100%
