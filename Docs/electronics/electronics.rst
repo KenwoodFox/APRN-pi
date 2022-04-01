@@ -4,5 +4,5 @@ Electronics
 Schematics
 ==========
 
-.. image:: ../../_hardwareOutput/BattleBot_Motherboard-schematic.svg
+.. image:: ../../_hardwareOutput/APRN-Pi-schematic.svg
     :scale: 100%
