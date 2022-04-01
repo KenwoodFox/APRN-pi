@@ -65,6 +65,9 @@ jobs:
           name: APRN-Pi-Hardware
           path: _hardwareOutput
 
+      # Convert svg graphics
+      - run: convert -density 300 _hardwareOutput/APRN-pi-schematic.svg _hardwareOutput/APRN-pi-schematic.png
+
       - run: cd Docs && make latexpdf
 
       - run: mv Docs/_build/latex/*.pdf Docs/_build/latex/APRN-Pi-Manual.pdf

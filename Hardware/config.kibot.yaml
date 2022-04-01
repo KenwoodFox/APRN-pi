@@ -4,10 +4,10 @@ kibot:
 
 preflight:
   # Warn us about unconnected
-  ignore_unconnected: true # (Skip for now)
+  ignore_unconnected: false
 
   # Do a DRC check
-  run_drc: false # (Skip for now)
+  run_drc: true
 
   # Replace variables
   set_text_variables:
