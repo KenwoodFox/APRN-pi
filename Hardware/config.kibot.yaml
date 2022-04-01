@@ -18,8 +18,8 @@ preflight:
       before: "Release: "
     - name: "issue"
       command: "date '+%Y-%m-%d'"
-    - name: "KENWOODFOX_3DMODELS" # My custom libs!
-      command: "echo 'Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries/3d'"
+    #- name: "KENWOODFOX_3DMODELS" # My custom libs!
+    #  command: "echo 'Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries/3d'"
 
 outputs:
   - name: "Images"
