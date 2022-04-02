@@ -7,7 +7,7 @@ preflight:
   ignore_unconnected: false
 
   # Do a DRC check
-  run_drc: false
+  run_drc: true
 
   # Replace variables
   set_text_variables:
