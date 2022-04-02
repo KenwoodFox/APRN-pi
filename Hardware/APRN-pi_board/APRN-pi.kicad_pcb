@@ -5,6 +5,14 @@
   )
 
   (paper "A4")
+  (title_block
+    (title "APRN-Pi")
+    (date "$(ISSUE)")
+    (rev "${REVISION}")
+    (company "Kitsune Scientific")
+    (comment 4 "Release: ${FULL_REVISION}")
+  )
+
   (layers
     (0 "F.Cu" signal)
     (31 "B.Cu" signal)

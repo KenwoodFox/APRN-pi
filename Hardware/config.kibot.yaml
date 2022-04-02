@@ -15,7 +15,6 @@ preflight:
       command: "git rev-parse --short HEAD"
     - name: "FULL_REVISION"
       command: "git describe --always --tags"
-      before: "Release: "
     - name: "ISSUE"
       command: "date '+%Y-%m-%d'"
     - name: "KENWOODFOX_3DMODELS" # My custom libs!

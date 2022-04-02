@@ -8,7 +8,8 @@
     (title "APRN-Pi")
     (date "${ISSUE}")
     (rev "${REVISION}")
-    (comment 4 "${FULL_REVISION}")
+    (company "Kitsune Scientific")
+    (comment 4 "Release: ${FULL_REVISION}")
   )
 
   (lib_symbols
