@@ -77,6 +77,14 @@ jobs:
           name: APRN-Pi-Manual
           path: Docs/_build/latex/APRN-Pi-Manual.pdf
 
+      - name: Discord notification if failed
+        if: ${{ failure() }}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          args: "Building new board failed, most likely a DRC check."
+
   dev-publish:
     # publish only to devs
     runs-on: ubuntu-latest
