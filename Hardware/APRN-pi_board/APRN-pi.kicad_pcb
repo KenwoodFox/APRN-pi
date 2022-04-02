@@ -380,7 +380,7 @@
   (gr_arc (start 174 99) (mid 173.12132 101.12132) (end 171 102) (layer "Edge.Cuts") (width 0.1) (tstamp e5609755-578f-4594-bef6-8411997982ee))
   (gr_line (start 103 99) (end 103 68) (layer "Edge.Cuts") (width 0.1) (tstamp e7dd45f1-5351-421d-8236-248f0f5c3602))
   (gr_line (start 171 102) (end 106 102) (layer "Edge.Cuts") (width 0.1) (tstamp f3d0001d-00eb-4d15-b47c-9cf461d127c7))
-  (gr_text "APRN-Pi\nDesign by KW1FOX\n${full_revision}" (at 107 92) (layer "F.SilkS") (tstamp ea318c4c-2aac-4b16-8f77-376b163fde73)
+  (gr_text "APRN-Pi\nDesign by KW1FOX\n${FULL_REVISION}" (at 107 92) (layer "F.SilkS") (tstamp ea318c4c-2aac-4b16-8f77-376b163fde73)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
 

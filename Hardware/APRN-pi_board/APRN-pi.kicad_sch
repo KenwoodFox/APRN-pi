@@ -6,9 +6,9 @@
 
   (title_block
     (title "APRN-Pi")
-    (date "${issue}")
-    (rev "${revision}")
-    (comment 4 "${full_revision}")
+    (date "${ISSUE}")
+    (rev "${REVISION}")
+    (comment 4 "${FULL_REVISION}")
   )
 
   (lib_symbols
@@ -836,7 +836,7 @@
   (symbol (lib_id "power:GND") (at 254 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0c46af98-855d-4ce0-aa47-c9d37114d6f9)
-    (property "Reference" "#PWR?" (id 0) (at 254 72.39 0)
+    (property "Reference" "#PWR0103" (id 0) (at 254 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 254 71.12 0))
@@ -940,7 +940,7 @@
   (symbol (lib_id "power:+5V") (at 271.78 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4808566a-ec98-4430-9963-a7578cc9e827)
-    (property "Reference" "#PWR?" (id 0) (at 271.78 50.8 0)
+    (property "Reference" "#PWR0104" (id 0) (at 271.78 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 271.78 41.91 0))
@@ -1012,10 +1012,10 @@
       (reference "#PWR0102") (unit 1) (value "+5V") (footprint "")
     )
     (path "/0c46af98-855d-4ce0-aa47-c9d37114d6f9"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
     )
     (path "/4808566a-ec98-4430-9963-a7578cc9e827"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0104") (unit 1) (value "+5V") (footprint "")
     )
     (path "/3f3bf25c-fe77-4cf4-b69b-53b67dff8a67"
       (reference "J1") (unit 1) (value "Raspberry_Pi_2_3") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical")

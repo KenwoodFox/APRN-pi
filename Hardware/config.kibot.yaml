@@ -11,12 +11,12 @@ preflight:
 
   # Replace variables
   set_text_variables:
-    - name: "revision"
+    - name: "REVISION"
       command: "git rev-parse --short HEAD"
-    - name: "full_revision"
+    - name: "FULL_REVISION"
       command: "git describe --always --tags"
       before: "Release: "
-    - name: "issue"
+    - name: "ISSUE"
       command: "date '+%Y-%m-%d'"
     - name: "KENWOODFOX_3DMODELS" # My custom libs!
       command: "echo 'Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries/3d'"
@@ -29,6 +29,12 @@ outputs:
   - name: "3D Models"
     comment: "3D Models"
     type: step
+
+  - name: "3D Renders"
+    comment: "3D Renders for docs!"
+    type: render_3d
+    options:
+      board: "#002d04"
 
   - name: PCBWay_gerbers
     comment: Gerbers compatible with PCBWay
