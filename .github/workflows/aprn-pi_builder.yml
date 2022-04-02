@@ -85,6 +85,11 @@ jobs:
     needs: [make_docs, KiCad_Hardware]
 
     steps:
+      # Be in our repo
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       # Download artifacts
       - uses: actions/download-artifact@v2
         with:
@@ -99,6 +104,8 @@ jobs:
       - run: cp *.pdf _staging/
 
       - run: cp *.step _staging/
+
+      - run: cp PCBWay/*.zip _staging/APRN-pi-$(git rev-parse --short HEAD)-PCBWay.zip
 
       - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
