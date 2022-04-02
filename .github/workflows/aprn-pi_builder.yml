@@ -85,6 +85,11 @@ jobs:
     needs: [make_docs, KiCad_Hardware]
 
     steps:
+      # Be in our repo
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       # Download artifacts
       - uses: actions/download-artifact@v2
         with:
