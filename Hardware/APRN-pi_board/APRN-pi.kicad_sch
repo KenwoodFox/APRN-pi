@@ -385,7 +385,7 @@
       (symbol "DRA818V_0_1"
         (rectangle (start -6.35 7.62) (end 6.35 -16.51)
           (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
+          (fill (type background))
         )
       )
       (symbol "DRA818V_1_1"
