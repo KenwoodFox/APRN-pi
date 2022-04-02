@@ -35,6 +35,8 @@ outputs:
     type: render_3d
     options:
       board: "#002d04"
+      variant: default
+      ray_tracing: true
 
   - name: PCBWay_gerbers
     comment: Gerbers compatible with PCBWay
