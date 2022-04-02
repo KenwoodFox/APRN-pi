@@ -33,6 +33,8 @@ outputs:
   - name: "3D Renders"
     comment: "3D Renders for docs!"
     type: render_3d
+    options:
+      board: #002d04
 
   - name: PCBWay_gerbers
     comment: Gerbers compatible with PCBWay
