@@ -11,12 +11,12 @@ preflight:
 
   # Replace variables
   set_text_variables:
-    - name: "revision"
+    - name: "REVISION"
       command: "git rev-parse --short HEAD"
-    - name: "full_revision"
+    - name: "FULL_REVISION"
       command: "git describe --always --tags"
       before: "Release: "
-    - name: "issue"
+    - name: "ISSUE"
       command: "date '+%Y-%m-%d'"
     - name: "KENWOODFOX_3DMODELS" # My custom libs!
       command: "echo 'Hardware/APRN-pi_board/Libraries/kenwoodfox-kicad-libraries/3d'"
