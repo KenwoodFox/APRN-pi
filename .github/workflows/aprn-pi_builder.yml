@@ -77,6 +77,30 @@ jobs:
           name: APRN-Pi-Manual
           path: Docs/_build/latex/APRN-Pi-Manual.pdf
 
+  dev-publish:
+    # publish only to devs
+    runs-on: ubuntu-latest
+    name: Dev-Publish
+    needs: [make_docs, KiCad_Hardware]
+
+    steps:
+      # Download artifacts
+      - uses: actions/download-artifact@v2
+        with:
+          name: APRN-Pi-Manual
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: APRN-Pi-Hardware
+
+      - name: send custom message with args
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "APRN-Pi-Manual.pdf"
+          args: APRN-Pi Just got an update!
+
   publish:
     # Only run on tags
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
