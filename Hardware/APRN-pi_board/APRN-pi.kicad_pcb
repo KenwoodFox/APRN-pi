@@ -151,7 +151,7 @@
   (net 53 "Net-(J5-PadT)")
   (net 54 "GPIO22")
   (net 55 "+3V3")
-  (net 56 "Net-(R3-Pad1)")
+  (net 56 "Net-(Q1-Pad1)")
   (net 57 "Net-(D1-Pad2)")
   (net 58 "H{slash}L")
 
@@ -278,7 +278,7 @@
     (fp_line (start 1 0.625) (end -1 0.625) (layer "F.Fab") (width 0.1) (tstamp c8ca9a66-eff3-4707-9a9d-461ceca36c3c))
     (fp_line (start -1 -0.625) (end 1 -0.625) (layer "F.Fab") (width 0.1) (tstamp f6c782ca-9230-4efe-929d-f20e375eb5a5))
     (pad "1" smd roundrect (at -0.9125 0) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
-      (net 56 "Net-(R3-Pad1)") (pintype "passive") (tstamp aa4f997d-13fc-4b90-aee4-55b65642d73e))
+      (net 56 "Net-(Q1-Pad1)") (pintype "passive") (tstamp aa4f997d-13fc-4b90-aee4-55b65642d73e))
     (pad "2" smd roundrect (at 0.9125 0) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
       (net 41 "Net-(D3-Pad2)") (pintype "passive") (tstamp b794d5f3-bb58-4a83-b180-e930ca706cb4))
     (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
@@ -425,8 +425,8 @@
       (net 13 "RXD") (pinfunction "TXD") (pintype "output") (tstamp 08b97377-720d-4032-a557-2212919997f2))
     (pad "18" smd roundrect (at -10.16 -13.335 180) (size 2.286 1.524) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 52 "TX_AUDIO") (pinfunction "MIC") (pintype "input") (tstamp 216f3b5c-520f-4733-9bab-082700abb7f6))
-    (model "${KENWOODFOX_3DMODELS}/DRA818V.step"
-      (opacity 0.9900)      (offset (xyz 0 0 0))
+    (model "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/3d/DRA818V.wrl"
+      (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1783,7 +1783,7 @@
     (fp_line (start -0.65 -1.125) (end -0.325 -1.45) (layer "F.Fab") (width 0.1) (tstamp 932552cb-5fea-4e9a-8627-8911464cc405))
     (fp_line (start 0.65 -1.45) (end 0.65 1.45) (layer "F.Fab") (width 0.1) (tstamp 984a66d8-c710-44ae-98fa-a885ff8e00f1))
     (pad "1" smd roundrect (at -0.9375 -0.95 270) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 56 "Net-(R3-Pad1)") (pinfunction "B") (pintype "input") (tstamp 531e81b0-53e6-4474-9d42-5f16e326792d))
+      (net 56 "Net-(Q1-Pad1)") (pinfunction "B") (pintype "input") (tstamp 531e81b0-53e6-4474-9d42-5f16e326792d))
     (pad "2" smd roundrect (at -0.9375 0.95 270) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 55 "+3V3") (pinfunction "E") (pintype "passive") (tstamp 457f65f3-c3b6-44fb-a69a-4aef1750e748))
     (pad "3" smd roundrect (at 0.9375 0 270) (size 1.475 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
