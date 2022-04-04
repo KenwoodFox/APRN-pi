@@ -425,7 +425,7 @@
       (net 13 "RXD") (pinfunction "TXD") (pintype "output") (tstamp 08b97377-720d-4032-a557-2212919997f2))
     (pad "18" smd roundrect (at -10.16 -13.335 180) (size 2.286 1.524) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 52 "TX_AUDIO") (pinfunction "MIC") (pintype "input") (tstamp 216f3b5c-520f-4733-9bab-082700abb7f6))
-    (model "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/3d/DRA818V.wrl"
+    (model "${KENWOODFOX_3DMODELS}/DRA818V.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
