@@ -589,7 +589,7 @@
 
   (footprint "KenwoodFox:KITSUNE_LOGO" (layer "F.Cu")
     (tedit 0) (tstamp 55fa5fa0-9426-4801-b40c-682e71189d8a)
-    (at 154.5 75.5)
+    (at 155.5 75.5)
     (property "Sheetfile" "APRN-pi.kicad_sch")
     (property "Sheetname" "")
     (path "/934fbbb7-68d4-48b2-b966-8b80b47dd229")
@@ -2476,7 +2476,7 @@
   (gr_text "GND" (at 112.5 79 90) (layer "F.SilkS") (tstamp ae8f84b9-8738-4a79-be99-17b739459dee)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "APRN-Pi\nDesign by KW1FOX\n${FULL_REVISION}" (at 152.5 83.5) (layer "F.SilkS") (tstamp ea318c4c-2aac-4b16-8f77-376b163fde73)
+  (gr_text "APRN-Pi\nDesign by KW1FOX\n${FULL_REVISION}" (at 153.5 83.5) (layer "F.SilkS") (tstamp ea318c4c-2aac-4b16-8f77-376b163fde73)
     (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
   )
   (gr_text "GND" (at 117 102.5 90) (layer "F.SilkS") (tstamp efe17815-7763-4352-b8a5-44937d288951)
