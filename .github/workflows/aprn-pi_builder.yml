@@ -36,6 +36,14 @@ jobs:
           name: APRN-Pi-Hardware
           path: _hardwareOutput
 
+      - name: Discord notification if failed
+        if: ${{ failure() }}
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          args: "Building new board failed, most likely a DRC check."
+
   make_docs:
     runs-on: ubuntu-latest
     name: Build Docs
@@ -65,6 +73,9 @@ jobs:
           name: APRN-Pi-Hardware
           path: _hardwareOutput
 
+      # Convert svg graphics
+      - run: convert -density 300 _hardwareOutput/APRN-pi-schematic.svg _hardwareOutput/APRN-pi-schematic.png
+
       - run: cd Docs && make latexpdf
 
       - run: mv Docs/_build/latex/*.pdf Docs/_build/latex/APRN-Pi-Manual.pdf
@@ -74,6 +85,37 @@ jobs:
           name: APRN-Pi-Manual
           path: Docs/_build/latex/APRN-Pi-Manual.pdf
 
+  dev-publish:
+    # publish only to devs
+    runs-on: ubuntu-latest
+    name: Dev-Publish
+    needs: [make_docs, KiCad_Hardware]
+
+    steps:
+      # Download artifacts
+      - uses: actions/download-artifact@v2
+        with:
+          name: APRN-Pi-Manual
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: APRN-Pi-Hardware
+
+      - name: send custom message with args
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "APRN-Pi-Manual.pdf"
+          args: APRN-Pi Just got an update!
+
+      - name: send custom message with args
+        uses: appleboy/discord-action@master
+        with:
+          webhook_id: ${{ secrets.WEBHOOK_ID }}
+          webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+          file: "APRN-pi-3D_top.png"
+
   publish:
     # Only run on tags
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
@@ -82,6 +124,11 @@ jobs:
     needs: [make_docs, KiCad_Hardware]
 
     steps:
+      # Be in our repo
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       # Download artifacts
       - uses: actions/download-artifact@v2
         with:
@@ -96,6 +143,8 @@ jobs:
       - run: cp *.pdf _staging/
 
       - run: cp *.step _staging/
+
+      - run: cp PCBWay/*.zip _staging/APRN-pi-$(git rev-parse --short HEAD)-PCBWay.zip
 
       - name: Upload Docs to release
         uses: svenstaro/upload-release-action@v2
