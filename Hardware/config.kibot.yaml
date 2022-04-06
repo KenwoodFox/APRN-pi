@@ -35,6 +35,10 @@ outputs:
     options:
       board: "#002d04"
       ray_tracing: true
+      rotate_x: 2
+      rotate_y: 1
+      zoom: 3
+      wait_rt: 20
 
   - name: PCBWay_gerbers
     comment: Gerbers compatible with PCBWay
