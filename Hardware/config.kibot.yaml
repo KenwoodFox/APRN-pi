@@ -33,7 +33,6 @@ outputs:
     comment: "3D Renders for docs!"
     type: render_3d
     options:
-      board: "#002d04"
       ray_tracing: true
       rotate_x: -1
       rotate_y: 2
