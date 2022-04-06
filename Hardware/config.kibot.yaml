@@ -35,9 +35,9 @@ outputs:
     options:
       board: "#002d04"
       ray_tracing: true
-      rotate_x: 2
-      rotate_y: -1
-      zoom: 4
+      rotate_x: -1
+      rotate_y: 2
+      zoom: 5
       wait_rt: 20
 
   - name: PCBWay_gerbers
