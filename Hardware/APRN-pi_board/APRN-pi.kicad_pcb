@@ -1881,8 +1881,8 @@
       (net 9 "GND") (pinfunction "Pin_1") (pintype "power_in") (tstamp 5e289f1b-d715-4265-a172-76964469bd27))
     (pad "2" thru_hole circle (at 5.08 0 90) (size 3 3) (drill 1.52) (layers *.Cu *.Mask)
       (net 10 "Net-(C4-Pad1)") (pinfunction "Pin_2") (pintype "passive") (tstamp b6fe02f9-2fe3-4083-aa6b-6b5c42c23b68))
-    (model "${KICAD6_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_bornier-2_P5.08mm.wrl"
-      (offset (xyz 2.539999962 0 0))
+    (model "${KICAD6_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal.wrl"
+      (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
