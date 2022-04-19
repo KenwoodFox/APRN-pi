@@ -1,20 +1,21 @@
-import git
+import subprocess
 
 # Project Information
-
 project = "APRN-Pi"
 copyright = "2021-2022, To Be Announced"
 author = "Kitsune Scientific"
 
 
 # The full version, including alpha/beta/rc tags
+repoProcess = subprocess.run(
+    args=["git", "describe", "--dirty=-dirty", "--tags", "--always"],
+    capture_output=True,
+)
 
-repo = git.Repo(search_parent_directories=True)
-release = str(repo.git.describe("--tags", "--always"))
+release = repoProcess.stdout.decode().strip()
 
 
 # General Config
-
 extensions = ["sphinx.ext.autosectionlabel", "sphinx.ext.imgconverter"]
 
 # Add any paths that contain templates here, relative to this directory.
