@@ -2651,8 +2651,8 @@
     (in_bom yes) (on_board yes)
     (uuid 20696178-99af-45a1-a04d-4b77ef1761b5)
     (property "Reference" "J3" (id 0) (at 21.59 109.22 90))
-    (property "Value" "Amplifier Jumper" (id 1) (at 29.21 106.68 90))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" (id 2) (at 26.67 107.95 0)
+    (property "Value" "" (id 1) (at 29.21 106.68 90))
+    (property "Footprint" "" (id 2) (at 26.67 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 26.67 107.95 0)
@@ -3661,7 +3661,7 @@
       (reference "J2") (unit 1) (value "Conn_Coaxial") (footprint "Connector_Coaxial:SMA_Amphenol_132291_Vertical")
     )
     (path "/20696178-99af-45a1-a04d-4b77ef1761b5"
-      (reference "J3") (unit 1) (value "Amplifier Jumper") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+      (reference "J3") (unit 1) (value "Amplifier Jumper") (footprint "Connector_JST:JST_GH_SM03B-GHS-TB_1x03-1MP_P1.25mm_Horizontal")
     )
     (path "/acf1eb3e-4147-4aba-82a7-68aecbd54775"
       (reference "J4") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock:TerminalBlock_bornier-2_P5.08mm")
