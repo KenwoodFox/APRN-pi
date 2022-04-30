@@ -3960,7 +3960,7 @@
   (symbol (lib_id "KenwoodFox:KITSUNE_LOGO") (at 266.065 172.085 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b86781e5-bc14-4d64-9f1e-65ff2da1fdb9)
-    (property "Reference" "#L?" (id 0) (at 266.065 167.7934 0)
+    (property "Reference" "#L1" (id 0) (at 266.065 167.7934 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "" (id 1) (at 266.065 178.435 0)
@@ -4209,7 +4209,7 @@
 
   (symbol_instances
     (path "/b86781e5-bc14-4d64-9f1e-65ff2da1fdb9"
-      (reference "#L?") (unit 1) (value "KITSUNE_LOGO") (footprint "")
+      (reference "#L1") (unit 1) (value "KITSUNE_LOGO") (footprint "")
     )
     (path "/0d7bc4ee-8b1c-4141-a30f-88ee74c2638f"
       (reference "#LOGO1") (unit 1) (value "Logo_Open_Hardware_Small") (footprint "")
