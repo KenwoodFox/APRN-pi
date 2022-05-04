@@ -379,8 +379,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
-          "+5V",
-          "Net-(C4-Pad1)"
+          "+5V"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -400,8 +399,7 @@
         "microvia_drill": 0.1,
         "name": "RF 50ohm",
         "nets": [
-          "ANT",
-          "Net-(FL1-Pad3)"
+          "ANT"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -469,6 +467,10 @@
     [
       "7d78c9d4-c720-41af-8914-0b1df8d93fcd",
       ""
+    ],
+    [
+      "25f23f86-ec4f-4616-8525-0cb2cc3a0e36",
+      "Power"
     ]
   ],
   "text_variables": {}
